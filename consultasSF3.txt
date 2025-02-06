@@ -1,0 +1,166 @@
+m2597148	hasCreator.isLocatedIn
+m2597148	hasCreator.studyAt
+f54	hasMember.isLocatedIn
+f54	hasMember.studyAt
+f54	hasMember.likes
+p32	knows.likes
+m2597148	hasCreator.isLocatedIn.isPartOf
+m2597159	replyOf.hasCreator.isLocatedIn
+p20956	likes.replyOf.hasTag
+m2597148	hasCreator.knows.isLocatedIn
+p32	knows.knows.likes
+f54	hasMember.knows.likes
+m2597159	(replyOf  +  ).replyOf
+tc7	(isSubclassOf  +  ).isSubclassOf
+p32	(knows  +  ).studyAt
+p32	(knows  +  ).isLocatedIn
+p32	(knows  +  ).hasInterest
+p32	(knows  +  ).likes
+m2597159	replyOf.(replyOf+)
+tc7	isSubclassOf.(isSubclassOf+)
+p20956	likes.(replyOf+)
+f6	hasModerator.(knows+)
+m2597148	hasCreator.(knows+)
+f54	hasMember.(knows+)
+m2597148	hasCreator | (knows+)
+f6	hasModerator | (knows+)
+m2597159	replyOf | (replyOf+)
+tc7	isSubclassOf | (isSubclassOf+)
+p20956	likes | (replyOf+)
+p32	knows | (knows+)
+p20956	(likes.hasCreator)+
+m2597148	(hasCreator.likes)+
+m2597159	replyOf . (hasCreator | hasInterest)
+m2597159	replyOf . (hasCreator | likes)
+f6	hasModerator . (knows | hasInterest)
+f6	hasModerator . (hasInterest | likes)
+f54	hasMember . (knows | likes)
+p32	knows . (knows | likes)
+tc7	isSubclassOf+
+m2597159	 replyOf+
+p32	knows+
+m2597159	(replyOf  * ).replyOf
+tc7	(isSubclassOf  *  ).isSubclassOf
+p32	(knows  *  ).studyAt
+p32	(knows  *  ).isLocatedIn
+p32	(knows  * ).hasInterest
+p32	(knows  *  ).likes
+m2597159	replyOf.(replyOf*)
+tc7	isSubclassOf.(isSubclassOf*)
+t6	hasType.(isSubclassOf*)
+p20956	likes.(replyOf*)
+p32	knows.(knows*)
+m2597148	hasCreator.(knows*)
+m2597159	 replyOf*
+tc7	isSubclassOf*
+p32	knows*
+p20956	(likes.hasCreator)*
+m2597148	(hasCreator.likes)*
+f60	(containerOf.hasTag)?
+pL6	(isPartOf.isPartOf)?
+f54	(hasMember.isLocatedIn)?
+f54	(hasMember.studyAt)?
+m2597148	(hasCreator.likes)?
+p32	(knows.likes)?
+pL6	isPartOf . (isPartOf ?)
+m2597148	hasCreator . (isLocatedIn ?)
+f60	containerOf . (hasCreator ?)
+p32	knows . (isLocatedIn ?)
+f54	hasMember . (knows ?)
+p32	knows . (likes ?)
+f60	(containerOf ? ) . hasTag
+m2597148	(hasCreator ? ) . studyAt
+f54	(hasMember ? ) . studyAt
+p32	(knows ? ) . isLocatedIn
+f54	(hasMember ? ) . knows
+p32	(knows ? ) . likes
+p8	studyAt|knows
+m2597148	hasCreator|isLocatedIn
+f6	hasModerator|containerOf
+p56	hasInterest|knows
+p20956	likes|knows
+p20956	likes|hasInterest
+m2597148	isLocatedIn | studyAt
+m2597148	isLocatedIn | workAt
+f60	containerOf  | hasModerator
+p32	knows       | studyAt
+p32	knows       | likes
+p9	workAt      | likes
+m2597148	(isLocatedIn.isPartOf) | hasInterest
+m2597148	(isLocatedIn.isPartOf) | knows
+p32	(knows.studyAt) | hasInterest
+p32	(knows.isLocatedIn) | hasInterest
+p32	(knows.likes) | hasInterest
+p32	(knows.likes) | likes
+m2597148	isLocatedIn | (hasInterest.hasType)
+m2597148	isLocatedIn | (knows.hasInterest)
+p56	hasInterest | (knows.workAt)
+p32	knows | (knows.studyAt)
+p32	knows | (knows.likes)
+p9	workAt | (knows.likes)
+m2597148	(isLocatedIn | knows) | hasInterest
+m2597148	(isLocatedIn | knows) | likes
+p56	(hasInterest | workAt) | studyAt
+p56	(hasInterest | isLocatedIn) | studyAt
+p9	(workAt | knows) | likes
+p9	(workAt | likes) | knows
+m2597159	(replyOf+) | hasCreator
+m2597159	(replyOf+) | hasTag
+p32	(knows+ ) | isLocatedIn
+p32	(knows+ ) | studyAt
+p32	(knows+ ) | hasInterest
+p32	(knows+ ) | likes
+m2597159	(replyOf*) | hasCreator
+m2597159	(replyOf*) | hasTag
+p32	(knows* ) | knows
+p32	(knows* ) | workAt
+p32	(knows* ) | isLocatedIn
+p32	(knows* ) | studyAt
+m2597148	(hasCreator ? ) | hasCreator
+f6	(hasModerator ? ) | hasModerator
+f60	(containerOf ? ) | containerOf
+f60	(containerOf ? ) | hasModerator
+p20956	(likes ? ) | hasInterest
+p9	(workAt ? ) | likes
+m2597148	hasCreator | (hasCreator ?)
+f6	hasModerator | (hasModerator ?)
+f60	containerOf | (containerOf ?)
+f60	containerOf | (hasModerator ?)
+p20956	likes | (hasInterest ?)
+p9	workAt | (likes ?)
+m2597148	hasCreator?
+f6	hasModerator?
+m2597159	replyOf?
+p8	studyAt?
+p56	hasInterest?
+p20956	likes?
+m2597148	(hasCreator ?) ?
+f6	(hasModerator ?) ?
+m2597159	(replyOf ?) ?
+p8	(studyAt ?) ?
+p56	(hasInterest ?) ?
+p20956	(likes ?) ?
+m2597148	isLocatedIn | (hasInterest | knows)
+m2597148	isLocatedIn | (hasInterest | workAt)
+p56	hasInterest | (studyAt | knows)
+p56	hasInterest | (workAt | knows)
+p9	workAt | (hasInterest | likes)
+p9	workAt | (likes | knows)
+p8	(studyAt | knows)+
+p8	(studyAt | hasInterest)+
+f6	(hasModerator | containerOf)+
+p9	(workAt | hasInterest)+
+p20956	(likes | knows)+
+p9	(workAt | knows)+
+p8	(studyAt | knows)?
+p8	(studyAt | hasInterest)?
+f54	(hasMember | hasModerator)?
+f6	(hasModerator | containerOf)?
+p20956	(likes | knows)?
+p20956	(likes | hasInterest)?
+p8	(studyAt | knows)*
+p8	(studyAt | hasInterest)*
+f54	(hasMember | hasModerator)*
+f6	(hasModerator | containerOf)*
+p20956	(likes | knows)*
+p9	(workAt | knows)*
